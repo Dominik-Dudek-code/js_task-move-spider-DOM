@@ -12,7 +12,7 @@ document.addEventListener('click', (e) => {
   const wallRect = wall.getBoundingClientRect();
   const { offsetWidth: spiderWidth, offsetHeight: spiderHeight } = spider;
 
-  const minOffsetX = e.clientX - wallRect.left - borderSize - spiderHeight / 2;
+  const minOffsetX = e.clientX - wallRect.left - borderSize - spiderWidth / 2;
   const minOffsetY = e.clientY - wallRect.top - borderSize - spiderHeight / 2;
   const maxOffsetX = wallRect.width - spiderWidth - borderSize * 2;
   const maxOffsetY = wallRect.height - spiderHeight - borderSize * 2;
